@@ -3,8 +3,12 @@
 import pygame, sys, socket
 from pygame.locals import *
 
+if len(sys.argv) != 2:
+	print 'Digite o IP do servidor!\n'
+	exit()
+
 # Configuracoes do cliente
-ip = "127.0.0.1"
+ip = str(sys.argv[1])
 port = 7000 
 addr = ((ip,port)) 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import socket 
+import socket
 
 # Configuracoes do servidor
 host = '' 
